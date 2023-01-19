@@ -19,4 +19,4 @@ ns              IN      A       10.0.0.9
 ; -- add dns records below
 
 hajimari      IN      A       10.0.0.201
-*             IN      A       10.0.0.201
+echo-server   IN      A       10.0.0.201
