@@ -1,7 +1,7 @@
 # Setup
 
 
-# Install Ansible
+## Install Ansible
 
 ```sh
 sudo apt update
@@ -11,9 +11,24 @@ sudo apt install ansible
 ansible --version
 ```
 
-# Clone the repository
+## Clone the repository
 
 ```sh
 git clone https://github.com/fabricesemti80/bind9-server.git
 cd bind9-server
+```
+
+## (Optional) Disable DNS
+
+The default DNS service of Ubuntu is interfers with Bind9, so we turn it off by running the relevant playbook.
+
+```sh
+ansible-playbook ansible/playbooks/prepare-for-bind.yml
+```
+
+## Install Docker and Docker-Compose
+
+We obviously need these.
+
+```sh
 ```
