@@ -1,0 +1,6 @@
+[all]
+
+bind9 ansible_host=10.0.0.9 ansible_user=root
+
+[nas]
+bind9
