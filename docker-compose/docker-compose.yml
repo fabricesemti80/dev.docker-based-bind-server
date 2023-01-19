@@ -2,11 +2,11 @@ version: "3"
 
 services:
   bind9:
-    container_name: dns-demo-2
+    container_name: bind9-dns
     image: ubuntu/bind9:latest
     environment:
       - BIND9_USER=root
-      - TZ=Europe/Berlin
+      - TZ=Europe/London
     ports:
       - "53:53/tcp"
       - "53:53/udp"

@@ -28,7 +28,18 @@ ansible-playbook ansible/playbooks/prepare-for-bind.yml
 
 ## Install Docker and Docker-Compose
 
-We obviously need these.
+We obviously need these tools.
 
 ```sh
+ansible-playbook ansible/playbooks/docker.yaml
 ```
+
+## Docker-compose up
+
+This should bring up the Bind9 dns server.
+```sh
+cd docker-compose/
+docker-compose up
+```
+
+Note:
