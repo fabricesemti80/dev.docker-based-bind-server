@@ -37,9 +37,21 @@ ansible-playbook ansible/playbooks/docker.yaml
 ## Docker-compose up
 
 This should bring up the Bind9 dns server.
+
 ```sh
 cd docker-compose/
 docker-compose up
+```
+
+Once the settings are finalised, ensure to:
+
+```sh
+# enable docker at system start
+sudo systemctl enable docker
+
+# and run docker-compose as a daemon
+docker-compose up -d
+
 ```
 
 ## Notes
