@@ -42,4 +42,6 @@ cd docker-compose/
 docker-compose up
 ```
 
-Note:
+## Notes
+
+- reference: <https://www.youtube.com/watch?v=syzwLwE3Xq4&t=1174s>

@@ -1,0 +1,21 @@
+$TTL 2d
+
+$ORIGIN fabricesemti.net.
+
+; -- default name server, email record and settings
+
+@               IN      SOA     ns.fabricesemti.net. info.fabricesemti.net. (
+                                2023011900      ; serial
+                                12h             ; refresh
+                                15m             ; retry
+                                3w              ; expire
+                                2h              ; minimum ttl
+                                )
+
+                IN      NS      ns.fabricesemti.net.
+
+ns              IN      A       10.0.0.9
+
+; -- add dns records below
+
+hajimari      IN      A       10.0.0.201
